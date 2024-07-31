@@ -142,7 +142,7 @@ class Booking(BusDetails):
             print(" ")
             print("Invalid! Bus Id.")
             print("Re-Booking... ")
-            booking.bookingg()
+            booking.booked()
 
 bus_details = BusDetails()
 bus_details.display_buses()
@@ -164,7 +164,7 @@ while True:
         bus_details.display_buses()
 
 booking = Booking()
-booking.bookingg()
+booking.booked()
 
 #__________Ticket Confirmation__________
 
@@ -177,12 +177,12 @@ class bill():
                 print("[Successfully! \nYours Bus Ticket Was Booked\nHave a Great Journey!]")
 
             elif payment == "no" and "NO":
-                booking.bookingg()
+                booking.booked()
                 paybill.pay()
 
             else:
                 print("Invalid! Answer")
-                booking.bookingg()
+                booking.booked()
 
 paybill=bill()
 paybill.pay()
